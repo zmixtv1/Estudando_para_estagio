@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,11 +26,7 @@
       <form id="form" class="form">
         <div class="form-control">
           <label for="username">Nome de usuário</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite seu nome de usuário..."
-          />
+          <input name="nome" type="text" id="username" placeholder="Digite seu nome de usuário... " />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -34,7 +34,7 @@
 
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Digite seu email.." />
+          <input name="email" type="text" id="email" placeholder="Digite seu email.." />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -42,23 +42,15 @@
 
         <div class="form-control">
           <label for="password">Senha</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Digite sua senha..."
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
+          <input name="senha" type="password" id="password" placeholder="Digite sua senha..." />
+          =<i class="fas fa-exclamation-circle"></i>
+          =<i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
         </div>
 
         <div class="form-control">
           <label for="password-confirmation">Confirmação de senha</label>
-          <input
-            type="password"
-            id="password-confirmation"
-            placeholder="Digite sua senha novamente..."
-          />
+          <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..."/>
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -68,10 +60,7 @@
       </form>
     </div>
 
-    <script
-      src="https://kit.fontawesome.com/f9e19193d6.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
 
     <script src="./scripts.js"></script>
   </body>

@@ -23,10 +23,10 @@ session_start();
         <h2>Criar Uma Conta</h2>
       </div>
 
-      <form action="./calculo.php" method="POST" id="form" class="form">
+      <form action="cadastrar.php" method="POST" id="form" class="form">
         <div class="form-control">
           <label for="username">Nome de usuário</label>
-          <input name="nome" type="text" id="username" placeholder="Digite seu nome de usuário... " />
+          <input name="nome" type="text" id="username" placeholder="Digite aa seu nome de usuário... " />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>

@@ -8,7 +8,7 @@ $senha = $_POST['senha'];
 
 $sql = "INSERT INTO usuario (nome, usuario, senha) VALUES ('$nome', '$usuario', '$senha')";
 
-if (mysqli_query($conexao, $sql)) {
+if (mysqli_query($conexao, $sql) == TRUE) {
 	echo "New record created successfully";
   } else {
 	echo "Error: " . $sql . "<br>" . mysqli_error($conn);

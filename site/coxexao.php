@@ -1,9 +1,18 @@
 <?php
-define('HOST', 'localhost');
-define('USUARIO', 'root');
-define('SENHA', '');
-define('DB', 'cadastro');
 
-$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possível conectar');
+$servername = "localhost";
+$usuario = "root";
+$senha = "";
+$banco = "cadastro";
+
+$conexao = new mysqli($servername, $usuario, $senha, $banco);
+
+if ($conexao->error){
+    die("Conexão falhou" .$conexao->connect_error);
+}else{
+    echo ("Conectado com sucesso");
+}
+
+
 
 ?>

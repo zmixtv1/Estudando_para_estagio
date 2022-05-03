@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@ session_start();
         <h2>Criar Uma Conta</h2>
       </div>
 
-      <form id="form" class="form">
+      <form action="./calculo.php" method="POST" id="form" class="form">
         <div class="form-control">
           <label for="username">Nome de usuário</label>
           <input name="nome" type="text" id="username" placeholder="Digite seu nome de usuário... " />
